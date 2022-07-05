@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("include/config.php");
 
 if(isset($_POST['submit'])){
 
@@ -12,6 +12,12 @@ if(isset($_POST['submit'])){
 
 $sql=mysqli_query($conn,"INSERT INTO `service`(`name`,`mobile_no`,`email`,`services`,`description`) 
   VALUES ('$name','$mobile_no','$email','$services','$description')");
+
+if($sql==1){
+header("location:servicetable.php");
+}
+else
+echo 'connection failed';
 }
 ?>
 <!DOCTYPE html>
