@@ -162,13 +162,13 @@ if(isset($_POST['submit'])){
                 <div class="form-group">
                   <label>Payemnt Amount</label>
                   <input type="text" class="form-control" name="amount">
-                  <input type="text" name="aid" class="category">
+                  <input type="hidden" name="aid" class="category">
 
                 </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" name="submit">Save changes</button>
+                <button type="submit" class="btn btn-primary" name="submit">Pay</button>
               </div>
             </form>
           </div>

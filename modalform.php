@@ -91,33 +91,78 @@ if(isset($_POST['dnkidno1'])){
 			<form method="post" action="modalform.php">
 <input type="hidden" value="'.$_POST['dnkidno1'].'" name="id">    
         <div class="modal-body body1">
-                <div class="row">   
-                <div class="col-4">
-               
-                <label>Status :</label>
-                <p> <select required class="form-control" name="status" id="servicesid">
-                        <option value="" disabled selected hidden>select</option>
-                        <option value="Open">Open</option>
-                        <option value="In Process">In Process</option>
-                        <option value="On Hold">On Hold</option>
-                        <option value="Closed">Closed</option>
-                        
-                       
-                    
-
-                      </select> </p>
-             
-                </div>
-                </div>
-
-               
-            </div>
-            <div class="modal-footer justify-content-between">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary" value="Save" name="save">Save</button>
-            </div>
+                
            
-                        
+        <div class="modal-body body1">
+        <div class="row">   
+        <div class="col-4">
+        <b> Name :</b><br>
+        </div>
+        <div class="col-8">
+        <p> '.$arr['name'].' </p>
+        </div>
+        </div>
+
+        <div class="row">   
+         <div class="col-4">
+        <b> Mobile No :</b><br>
+        </div>
+        <div class="col-8">
+        <p> '.$arr['mobile_no'].' </p>
+        </div>
+        </div>
+
+        <div class="row">   
+         <div class="col-4">
+        <b> Email :</b><br>
+        </div>
+        <div class="col-8">
+        <p>'.$arr['email'].'</p>
+        </div>
+        </div>
+
+        <div class="row">   
+         <div class="col-4">
+        <b> Service :</b><br>
+        </div>
+        <div class="col-8">
+        <p> '.$arr['services'].' </p>
+        </div>
+        </div>
+
+        <div class="row">   
+         <div class="col-4">
+        <b> Description :</b><br>
+        </div>
+        <div class="col-8">
+        <p> '.$arr['description'].' </p>
+        </div>
+        </div>
+        
+        <div class="row">   
+        <div class="col-4">
+       
+        <label>Status :</label>
+        </div>
+        <div class="col-8">
+        <p> <select required class="form-control" name="status" id="servicesid">
+                <option value="" disabled selected hidden>select</option>
+                <option value="Open">Open</option>
+                <option value="In Process">In Process</option>
+                <option value="On Hold">On Hold</option>
+                <option value="Closed">Closed</option>
+                
+               
+            
+
+              </select> </p>
+     
+        </div>
+        </div>
+    </div>
+    <div class="modal-footer justify-content-between">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    </div>      
                        
             </form>';
 }
